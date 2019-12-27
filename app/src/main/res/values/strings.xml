@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GISY Project</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="Degree_prompt">select Degree</string>
+    <string-array name="Degree_arrays">
+
+    <item>B.Tech</item>
+    <item>B.Sc</item>
+    <item>B.A</item>
+    <item>B.Com</item>
+    <item>B.B.A</item>
+    <item>L.L.B</item>
+    <item>B.E</item>
+    </string-array>
+
+</resources>

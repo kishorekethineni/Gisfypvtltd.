@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dashUserProfileImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/gisfy"
+        app:civ_border_color="#F0F5F0"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/dashUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textColor="#A3CF3B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashUserProfileImage"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/dashUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="usermail@some.com"
+        android:textColor="#A3CF3B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashUserName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/EditButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashUserEmail"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Spinner
+        android:id="@+id/spinnerState"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/Degree_arrays"
+        android:prompt="@string/Degree_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashUserEmail"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <EditText
+        android:id="@+id/CityName"
+        android:layout_width="116dp"
+        android:layout_height="41dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="College Name"
+        android:textColor="#A3CF3B"
+        android:textColorHint="#A3CF3B"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerState"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <EditText
+        android:id="@+id/FullAddress"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Your Full address"
+        android:inputType="textMultiLine"
+        android:textColorHint="#A3CF3B"
+        android:textColor="#A3CF3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CityName"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:background="@drawable/loginbutton"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FullAddress"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/homeResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn"
+        app:layout_constraintVertical_bias="0.178" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
